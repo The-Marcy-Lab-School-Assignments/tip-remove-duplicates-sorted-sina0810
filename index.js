@@ -16,6 +16,18 @@
 
 const removeDuplicates = (nums) => {
     //write your code here
+    let uniqeNum = []
+    let k = 0
+    for (let i = 0; i < nums.length; i++){
+            if (nums[i] !== nums[k]){
+                uniqeNum.push(nums[i])
+            } else {
+                return -1
+            }
+            
+      
+    }
+    return uniqeNum
 };
 
 // Example usage (commented out to avoid interference with tests)
